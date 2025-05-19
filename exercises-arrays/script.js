@@ -24,9 +24,24 @@ function exercise2(){
 }
 
 function exercise3(){
-    /* Fazer um algoritmo que leia 100 valores numéricos inteiros e armazene-os em um
+    /* Fazer um algoritmo que leia 50 valores numéricos inteiros e armazene-os em um
     vetor. Após, verifique – dentre estes valores - se existem valores iguais a 30. Se existirem,
     escrever as posições em que estes valores estão armazenados. */
+    let arr = [];
+    let num;
+    for(let index = 0; index < 50; index++){
+        num = Math.floor(Math.random() * 50) + 1;
+        arr.push(num);
+    }
+    
+    console.log(arr);
+
+    for(let index = 0; index < 50; index++){
+        if(arr[index] == 30){
+            console.log(`Está na posição: ${index}°`)
+        }
+    }
+    
 }
 
 function exercise4(){
