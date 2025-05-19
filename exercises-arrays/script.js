@@ -38,13 +38,25 @@ function exercise3(){
 
     for(let index = 0; index < 50; index++){
         if(arr[index] == 30){
-            console.log(`Está na posição: ${index}°`)
+            console.log(`Está na posição: ${index}°`);
         }
     }
     
 }
 
 function exercise4(){
-    /* Faça um programa que leia 5 valores inteiros, armazeno-os em um vetor, calcule e apresente a soma
-    destes valores.  */
+    /* Faça um programa que leia 5 valores inteiros, armazenando-os em um vetor, calcule e apresente a soma
+    destes valores. */
+
+    let arr = [];
+    let num;
+    for(let index = 0; index < 5; index++){
+        num = parseInt(prompt(`Insira um valor inteiro`));
+        arr.push(num);
+    }
+    let sum = 0;
+    for(let index = 0; index < arr.length; index++){
+        sum += arr[index];
+    }
+    alert(`Soma total: ${sum}`);
 }
