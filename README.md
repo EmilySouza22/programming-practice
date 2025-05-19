@@ -1,2 +1,2 @@
 # programming-practice
-Repo pra praticar exercícios de programação
+🌱 Repo pra praticar exercícios de programação
