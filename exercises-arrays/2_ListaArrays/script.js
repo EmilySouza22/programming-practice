@@ -1,8 +1,9 @@
 /* 
 
-    Lista de Exercícios Vetores 
+    Introdução à Programação
+    Lista de Exercícios - Vetores
 
-    ---> Exercicios_Complementares_02_Vetores_Matrizes
+    --> Exercicios_Complementares_02_Vetores_Matrizes.doc
 
 */
 
@@ -56,4 +57,24 @@ function exercise2(){
     }
 
     alert(`\n Abaixo da média: ${abaixo}; \n Na média: ${media}; \n Acima da média: ${acima};`);
+}
+
+function exercise3(){
+    /* 3. Leia 15 números e coloque em um vetor. Depois gere dois vetores: um com os números em ordem crescente e
+    outro com os números em ordem decrescente. Por fim, mostre o conteúdo desses dois vetores.   */
+
+    let num;
+    let array = [];
+    for (let index = 0; index < 5; index++) {
+        num = parseInt(prompt(`Digite o ${index + 1}° número`));
+        array.push(num);
+    }
+
+    let crescente = array.slice();
+    crescente.sort((a,b) => a - b);
+
+
+    let decrescente = array.slice();
+    decrescente.sort((a,b) => b - a);
+
 }
