@@ -73,8 +73,9 @@ function exercise3(){
     let crescente = array.slice();
     crescente.sort((a,b) => a - b);
 
-
     let decrescente = array.slice();
     decrescente.sort((a,b) => b - a);
+
+    alert(`\n Ordem crescente: ${crescente} \n Ordem decrescente: ${decrescente}`);
 
 }
