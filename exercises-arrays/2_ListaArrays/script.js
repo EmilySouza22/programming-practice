@@ -27,8 +27,7 @@ function exercise1(){
         }
     } while (index < 10);
 
-    arr.reverse();
-    console.log(arr);
+    alert(`\n Array original: ${arr} \n Array invertido ${arr.reverse()}`);
 }
 
 function exercise2(){
@@ -65,7 +64,7 @@ function exercise3(){
 
     let num;
     let array = [];
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 15; index++) {
         num = parseInt(prompt(`Digite o ${index + 1}° número`));
         array.push(num);
     }
@@ -78,4 +77,26 @@ function exercise3(){
 
     alert(`\n Ordem crescente: ${crescente} \n Ordem decrescente: ${decrescente}`);
 
+}
+
+function exercise4(){
+    /* 4. Leia N números (no máximo 50) e coloque em um vetor. Depois mostre o menor número lido e em quais posições
+    ele aparece no vetor. Exemplo: {3,5,2,7,4,2,9,5}, o menor número é o 2 e aparece na posição 2 e 5.  */
+
+    let array = [];
+    for (let i = 0; i < 10; i++) {
+        let num = Math.floor(Math.random() * 10) + 1;
+        array.push(num);
+    }
+
+    let menorNum = Math.min(...array)
+    
+    let indice = [];
+    for(let i = 0; i< array.length; i++){
+        if(array[i] === menorNum){
+            indice.push(i);
+        }
+    }
+
+    alert(`\n Lista: ${array} \n Menor número: ${menorNum} \n Posição: ${indice}`);
 }
