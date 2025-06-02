@@ -84,7 +84,7 @@ function exercise4(){
     ele aparece no vetor. Exemplo: {3,5,2,7,4,2,9,5}, o menor número é o 2 e aparece na posição 2 e 5.  */
 
     let array = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 50; i++) {
         let num = Math.floor(Math.random() * 10) + 1;
         array.push(num);
     }
@@ -99,4 +99,10 @@ function exercise4(){
     }
 
     alert(`\n Lista: ${array} \n Menor número: ${menorNum} \n Posição: ${indice}`);
+}
+
+function exercise5(){
+    /* Leia N números (no máximo 50) e coloque em um vetor. Depois leia um número que indique a posição de um
+    número no vetor. Mostre o valor desse número no vetor. Exemplo: {3,5,2,7,4,2,9,5}. Posição: 3 Número: 7.  */
+
 }
